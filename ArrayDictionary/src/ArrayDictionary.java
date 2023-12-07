@@ -35,19 +35,22 @@ public class ArrayDictionary<T> {
         keys.remove(place);
         T value = values.get(place);
         values.remove(place);
+        size--;
         return value;
     }
 
     public boolean contains(T key){
-
+        return keys.contains(key);
     }
 
     public boolean isEmpty(){
-
+        if (size == 0)
+            return true;
+        return false;
     }
 
     public int size(){
-
+        return size;
     }
 
     public Collection<T> keys(){
