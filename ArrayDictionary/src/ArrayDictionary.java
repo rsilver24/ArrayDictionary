@@ -20,7 +20,9 @@ public class ArrayDictionary<T> {
     // Methods
 
     public void put(T key, T value){
-        
+        keys.add(key);
+        values.add(value);
+        size++;
     }
 
     public T get(T key){
