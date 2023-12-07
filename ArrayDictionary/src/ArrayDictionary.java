@@ -54,10 +54,16 @@ public class ArrayDictionary<T> {
     }
 
     public Collection<T> keys(){
-
+        Collection<T> c = new ArrayList();
+        for (int i = 0; i < size; i++){
+            c.add(keys.get(i));
+        } return c;
     }
 
     public Collection<T> values(){
-
+        Collection<T> c = new ArrayList();
+        for (int i = 0; i < size; i++){
+            c.add(values.get(i));
+        } return c;
     }
 }
