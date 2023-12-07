@@ -1,3 +1,4 @@
+// Roan Silver      Created: December 7, 2023        Last Edits: December 7, 2023
 public class ArrayDictionaryDriver {
     public static void main(String[] args) {
         ArrayDictionary AD = new ArrayDictionary();
