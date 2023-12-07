@@ -26,7 +26,8 @@ public class ArrayDictionary<T> {
     }
 
     public T get(T key){
-
+        int place = keys.indexOf(key);
+        return values.get(place);
     }
 
     public T remove(T key){
