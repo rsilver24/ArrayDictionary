@@ -31,7 +31,11 @@ public class ArrayDictionary<T> {
     }
 
     public T remove(T key){
-
+        int place = keys.indexOf(key);
+        keys.remove(place);
+        T value = values.get(place);
+        values.remove(place);
+        return value;
     }
 
     public boolean contains(T key){
